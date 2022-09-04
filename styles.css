@@ -28,7 +28,6 @@ h1, h2, h3, p, a {
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     background-color: rgb(21, 21, 21);
 }
 
