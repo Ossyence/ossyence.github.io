@@ -49,6 +49,7 @@ hr {
     font-size: 30px; 
     margin: 0px; 
     padding: 0px;
+    background-color: transparent;
 }
 
 .main-text {
@@ -63,7 +64,7 @@ hr {
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(21, 21, 21);
+    background-color: rgb(13, 13, 13);
 }
 
 .container {
@@ -77,12 +78,13 @@ hr {
     justify-content: center;
     height: fit-content;
     content: inherit;
-    background-color: rgb(21, 21, 21);
+    background-color: rgb(13, 13, 13);
 }
 
 .container a, .horizontal-long-container a {
     float: left;
     color:white;
+    background-color: transparent;
     text-align: center;
     padding: 14px 16px;
     text-decoration:none;
