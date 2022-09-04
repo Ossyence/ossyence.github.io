@@ -1,3 +1,64 @@
+h1, h2, h3, p, a {
+    color: white;
+    font-family: "Roboto";
+}
+
 .index-body {
     background-color: slateblue;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal-long-container {
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(21, 21, 21);
+}
+
+.container {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0pc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    content: inherit;
+    background-color: rgb(21, 21, 21);
+}
+
+.container a, .horizontal-long-container a {
+    float: left;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 20px;
+    transition: color 0.1s ease-out 0ms;
+    font: large;
+    text-shadow: none;
+    font-family: "Roboto-Bold";
+}
+
+.container a:hover, .horizontal-long-container a:hover {
+    color: slateblue;
 }
