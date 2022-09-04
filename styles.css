@@ -17,6 +17,39 @@ img {
     height: auto;
 }
 
+button {
+    border-radius: 20px; 
+    border-style: none; 
+    border: transparent;
+    background-color: rgb(212, 133, 255);
+    animation: return .2s 1;
+    color: white;
+    font-size: 90%;
+    font-family: "Roboto-Black";
+}
+
+textarea, input {
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    font-family: "Roboto";
+}
+
+@keyframes click {
+    0% {background-color: rgb(212, 133, 255);}
+    100% {background-color: rgb(166, 0, 255);}
+}
+
+@keyframes return {
+    0% {background-color: rgb(166, 0, 255);}
+    100% {background-color: rgb(212, 133, 255);}
+}
+
+button:active {
+    animation: click 0.2s 1;
+}
+
 a:hover {
     color: rgb(164, 6, 255);
 }
