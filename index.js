@@ -1,17 +1,13 @@
-function sendEmail(sendersEmail, subject, body, password) {
+function sendEmail(sendersEmail, subject, body) {
     Email.send({
-      Host: "smtp.gmail.com",
-      Username: sendersEmail,
-      Password: password,
-      To: 'ossyence.emails@gmail.com',
-      From: sendersEmail,
-      Subject: subject,
-      Body: body,
-    })
-
-    .then(function(message) {
-        console.log("hello!!")
-    });
+        SecureToken: "c926766b-e9d6-4f92-9b94-b0914a999fe0",
+        To : 'ossyence.emails@gmail.com',
+        From : sendersEmail,
+        Subject : subject,
+        Body : body
+    }).then(
+        console.log("sent!")
+    );
 }
 
 function prepareToEmail() {
@@ -19,15 +15,13 @@ function prepareToEmail() {
 
     const senderEmail = document.getElementById("emailAddress").value
     const title = document.getElementById("title").value
-    const emailPassword = document.getElementById("emailPassword").value
     const body  = document.getElementById("body").value
 
     console.log(senderEmail)
     console.log(title)
-    console.log(emailPassword)
     console.log(body)
 
-    sendEmail(senderEmail, title, body, emailPassword)
+    sendEmail(senderEmail, title, body)
 }
 
 /*
