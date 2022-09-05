@@ -1,33 +1,17 @@
-function sendEmail(sendersEmail, subject, body) {
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "ossyence.emails@gmail.com",
-        Password : "7D33083071E33F2ADA4A08915640FCC74B4C",
-        To : 'ossyence.emails@gmail.com',
-        From : sendersEmail,
-        Subject : subject,
-        Body : body
-    }).then(
-        console.log("sent!")
-    );
-}
-
-function prepareToEmail() {
-    console.log("preparing")
-
-    const senderEmail = document.getElementById("emailAddress").value
-    const title = document.getElementById("title").value
+function sendEmail() {
+    const name = document.getElementById("name").value
+    const subject = document.getElementById("subject").value
     const body  = document.getElementById("body").value
 
-    console.log(senderEmail)
-    console.log(title)
-    console.log(body)
-
-    sendEmail(senderEmail, title, body)
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username : "ossyence@gmail.com",
+        Password : "59B00F3B623A4258354302AF327F4B7890E2",
+        To : 'ossyence@gmail.com',
+        From : 'ossyence.emails@gmail.com',
+        Subject : subject,
+        Body : body + "\nBy: " + name 
+    }).then(
+        message => alert(message)
+    );
 }
-
-/*
-document.getElementById("sendButton").onclick = function() {
-    prepareToEmail()
-}
-*/
