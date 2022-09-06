@@ -22,7 +22,7 @@
         
         <br> <br> <br> <br>
          
-        <p>
+        <meta>
             <h1 class="main-text" style="font-size: 50px; margin: 20px; padding: 20px;font-family: 'Roboto-Black'; margin-left: 20%; margin-right: 20%;">Socials</h1>
             <hr>
             <h3 style="padding: 20px; margin:20px">
@@ -54,16 +54,18 @@
                 Or you can fill in a form here!
                 <br><br>
 
-                <input placeholder="Name"  style="width: 30%; height: 15px;" id="name">
+                <input placeholder="Name"  style="width: 75%; height: 15px;" id="name">
                 <br><br>
-                <input placeholder="Contact Email"  style="width: 30%; height: 15px;" id="contactEmail">
+                <input placeholder="Contact Email"  style="width: 75%; height: 15px;" id="contactEmail">
                 <br><br>
-                <input placeholder="Subject" style="width: 30%; height: 15px;" id="subject">
+                <input placeholder="Subject" style="width: 75%; height: 15px;" id="subject">
                 <br><br>
-                <textarea placeholder="Body" style="height: 200px; width: 50%;" id="body"></textarea>
+                <textarea placeholder="Body" style="height: 200px; width: 75%;" id="body" oninput="bodyChange()"></textarea>
+                <br>
+                <p id="bodyCount">0/50</p>
                 <br><br>
-                <button style="height: 50px; width: 20%;" id="sendButton" onclick="sendEmail()">Send!</button>
+                <button style="height: 50px; width: 50%;" id="sendButton" onclick="sendEmail()">Send!</button>
             </h3>
-        </p>
+        </meta>
     </body>
 </html>
