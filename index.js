@@ -41,7 +41,7 @@ function sendEmail() {
                     To : 'ossyence.emails.recipient@gmail.com',
                     From : 'ossyence.emails@gmail.com',
                     Subject : subject,
-                    Body : "<h3>" + body + "</h3><h2><br><br>By: " + name + "<br>Email: " + contactEmail + "<h2>"
+                    Body : "<h3>" + body + "</h3><h2><br><br>By: " + name + "<br>Email: " + contactEmail + "</h2>"
                 }).then(
                     message => alert(message)
                 );
