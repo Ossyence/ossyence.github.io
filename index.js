@@ -35,9 +35,12 @@ function sendEmail() {
 
             if (body.length > 50) {
                 Email.send({
+                    /*
                     Host: "smtp.elasticemail.com",
                     Username : "ossyence@gmail.com",
                     Password : "59B00F3B623A4258354302AF327F4B7890E2",
+                    */
+                    SecureToken : "05cd37e4-69f8-4b5a-bfeb-bdaec3f99676",
                     To : 'ossyence.emails.recipient@gmail.com',
                     From : 'ossyence.emails@gmail.com',
                     Subject : subject,
